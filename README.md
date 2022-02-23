@@ -5,7 +5,7 @@
 
   ## Description
   
-  https://github.com/yoowook1207/yookyNoteTaker<br />
+  https://github.com/yoowook1207/TUE-TrackUrEmployee<br />
   You can organize your employees information.<br />
 
   ## Table of Contents
