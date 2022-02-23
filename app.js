@@ -246,8 +246,19 @@ const addEmployee = () => {
                 db.query(managerSQL, (err,result)=> {
                     if (err) {
                         throw err;
+                    } else if(!empInfo.managerConfirm) {
+                        let sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUE ('${empInfo.first_name}', '${empInfo.last_name}', '${roleID}', null)`
+                        db.query(sql, (err, result) => {
+                            if (err) {
+                                throw err;
+                            }
+                            if (result) {
+                                return whatToDo();
+                            }
+                        })
                     } else if (result.length===0) {
                         console.log("please put existing manager's first and last name")
+                        return addEmployee();
                     } else{
                         let managerID = result[0].id
                         let sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUE ('${empInfo.first_name}', '${empInfo.last_name}', '${roleID}', '${managerID}')`

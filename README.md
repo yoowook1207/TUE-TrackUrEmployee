@@ -6,9 +6,7 @@
   ## Description
   
   https://github.com/yoowook1207/yookyNoteTaker<br />
-  You can take notes with this app.<br />
-  The application is deployed to Heroku. <br />
-  https://evening-ridge-17605.herokuapp.com/
+  You can organize your employees information.<br />
 
   ## Table of Contents
   * [Installation](#installation)
@@ -19,8 +17,18 @@
   * [Questions](#questions)
   
   ## Installation
+type following code to install npm CLIs
+```    
+    npm i
+```
+    
+type following code to initiate the application<br />
 
-  run the app with prompts.<br />
+```    
+    node app.js
+```    
+
+run the app with prompts.<br />
 
   ## Usage
   You can use prompt to use this application.<br />
@@ -38,7 +46,8 @@
 
   ## Tests
 
-  N/A
+  Walkthrough Video<br />
+  https://drive.google.com/file/d/1_r2kUaD_5NFcXNGGxu7QtIBNrpHo1g1p/view
 
   ## Questions
 
